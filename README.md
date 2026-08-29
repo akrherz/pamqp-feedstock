@@ -15,7 +15,6 @@ Documentation: https://pamqp.readthedocs.io/
 
 pamqp is a pure-python AMQP 0-9-1 frame encoder and decoder. The aim is to create a client agnostic python encoder and decoder for general purpose use.
 
-
 Current build status
 ====================
 
@@ -47,31 +46,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pamqp` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pamqp
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pamqp
 ```
 
-It is possible to list all of the versions of `pamqp` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pamqp
+# for installing globally
+pixi global install pamqp
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pamqp` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pamqp --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pamqp --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pamqp --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -83,6 +124,8 @@ mamba repoquery whoneeds pamqp --channel conda-forge
 # List dependencies of `pamqp`:
 mamba repoquery depends pamqp --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -153,7 +196,4 @@ Feedstock Maintainers
 
 * [@akrherz](https://github.com/akrherz/)
 * [@gregfreeman](https://github.com/gregfreeman/)
-
-
-<!-- dummy commit to enable rerendering -->
 
